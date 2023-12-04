@@ -1,11 +1,12 @@
 #!/bin/bash
 
 read -r S
-S=$(echo "$S" | tr -d '[:space:]')  # Remove leading and trailing whitespace
 n=${#S}
 
 if [ "$n" -lt 4 ]; then
-    S=$(printf "%0${n}d" 0)$S
+    S=$(printf "%04s" "$S" | tr ' ' '0')
+elif [ "$n" -gt 4 ]; then
+    S=${S:0:4}
 fi
 
 echo "$S"
