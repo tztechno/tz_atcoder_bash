@@ -47,3 +47,22 @@ else
 fi
 exit 0
 ################################
+#!/bin/bash
+read a b;
+c=$((a*b));
+if (($c%2==0)); then
+  echo "Even"
+else 
+  echo "Odd"
+fi
+exit 0
+################################
+cf.......[input]
+read a b
+read -r S
+read -a A
+read input
+------------
+read a;
+echo $a[変数宣言]
+################################
