@@ -14,7 +14,7 @@ grep -o . | sort | paste -sd '' | awk '{print $0 == "abc" ? "Yes" : "No"}'
 ####################################
 #!/bin/bash
 read A
-a=`echo $A |cut -b 1`
+a=`echo $A|cut -b 1`
 b=`echo $A|cut -b 2`
 c=`echo $A|cut -b 3`
 if [ $a != $b -a $a != $c -a $b != $c ]
