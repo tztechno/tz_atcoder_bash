@@ -43,9 +43,11 @@ abs() {
 }
 
 read a b c d
+
 dist_ac=$(abs a c)
 dist_ab=$(abs a b)
 dist_bc=$(abs b c)
+
 if (( dist_ac <= d )); then
     echo "Yes"
 elif (( dist_ab <= d && dist_bc <= d )); then
