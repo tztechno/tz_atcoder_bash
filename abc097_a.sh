@@ -57,4 +57,22 @@ else
 fi
 
 #########################################
+
+abs() {
+    if (( $1 < $2 )); then
+        expr $(( $2 - $1 ))
+    else
+        expr $(( $1 - $2 ))
+    fi
+}
+
+read a b c d
+
+if (( $(abs a c) <= d )); then
+    echo "Yes"
+elif (( $(abs a b) <= d && $(abs b c) <= d )); then
+    echo "Yes"
+else
+    echo "No"
+fi
 #########################################
