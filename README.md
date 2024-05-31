@@ -19,10 +19,14 @@
 ```
 ---
 ```
-
+if文の構成
+if (xxxxx); then
+elif (xxxxx); then
+else
+fi
 ```
 ---
 ```
-
+#!/bin/bash
 ```
 ---
