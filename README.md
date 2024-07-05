@@ -40,7 +40,12 @@
 ```
 ---
 ```
-
+read d
+echo -n 'Christmas'
+for (( i=0; i<25-d; ++i ))
+  do
+    echo -n ' Eve'
+  done
 ```
 ---
 ```
